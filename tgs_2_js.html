@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Nilai teori 75
+      // Nilai Praktek minimal 80
+      // Kehadiran minimal 90%
+      // Tidal memiliki pelanggaran berat = true false
+
+      // Jika rata-rata >90, lulus, sangat baik
+      // Jika rata-rata >85, lulus, baik
+
+      // Jika (kehadiran) kurang 90%, tidak lulus, kehadiran kurang
+      // Jika (nilai teori) kurang 75, tidak lulus, teori kurang
+      // Jika (pelanggaran berat) tidak lulus, pelanggaran disiplin
+
+      // Output
+      // Nama: Tri Adhy Yulianto
+      // Rata-rata: 81.5
+      // Status : Lulus
+
+      // (nilaiTeori + nilaiPraktek) /2
+
+      const Teori = 90;
+      const Praktek = 80;
+      const jumlahKehadiran = 90;
+      const pelanggaranBerat = false;
+
+      //   const nilaiTeori = Teori < 75;
+      //   const nilaiPraktek = Praktek < 80;
+      //   const kehadiran = jumlahKehadiran < 90;
+
+      //   const nilai = nilaiTeori || nilaiPraktek || kehadiran || pelanggaranBerat;
+      //   switch (nilai) {
+      //     case true:
+      //       console.log("nama", "Dapa");
+      //       console.log("rata-rata", (Teori + Praktek) / 2);
+      //       console.log("status", "Tidak lulus");
+      //       break;
+      //     case false:
+      //       console.log("nama", "Dapa");
+      //       console.log("rata-rata", (Teori + Praktek) / 2);
+      //       console.log("status", "lulus");
+      //     default:
+      //       break;
+      //   }
+
+      //cara lain:
+
+      if (
+        Teori < 75 ||
+        Praktek < 80 ||
+        jumlahKehadiran < 90 ||
+        pelanggaranBerat
+      ) {
+        console.log("nama", "Dapa");
+        console.log("rata-rata", (Teori + Praktek) / 2);
+        console.log("status", "Tidak lulus");
+      } else {
+        console.log("nama", "Dapa");
+        console.log("rata-rata", (Teori + Praktek) / 2);
+        console.log("status", "lulus");
+      }
+    </script>
+  </body>
+</html>
