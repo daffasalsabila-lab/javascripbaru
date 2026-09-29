@@ -1,0 +1,32 @@
+<!-- array : strucktur data yang bisa menyimpan datanya lebih dari 1 -->
+<script>
+    // const nama = "budi, laras, andi";
+    let nama = ["Budi", "Laras", "Andi"] //0, 1,2                   //let: bisa di ubah
+    const keranjang = ["Buah", "Sayuran", "Ikan"] //0, 1,2          //const: tidak bisa diubahkan (permanen)
+
+    console.log(nama[0]) //budi  //karena nama di [angka] itu ada di dalam const nama
+    console.log(nama[1]) //laras
+    console.log(nama[2]) //andi
+    console.log(keranjang[2]) 
+    nama[2] = "Agung";
+    console.log(nama);
+    nama.push('raka'); //shift untuk sebuah isi "" berada di paling belakang
+    nama.unshift("Rozak"); //unshift untuk sebuah isi "" berada di paling depan
+    
+    // indexOf : method /function, buat mencari (searcing) dimana data atau nama nya tercantum. contoh nya "Budi" ada di data "1"
+    const target = nama.indexOf("Budi");
+    console.log(target);
+    
+    // spread operator : ... //[...]buat ngecopy/gabungin di data
+    nama = [...nama, "Wawan"] 
+    nama = ["Wawan", ...nama]
+    console.log("nama baru", nama);
+
+
+    // length: count
+    const total = nama.length
+    const totalKeranjang = keranjang.length
+    console.log(nama.length)
+
+
+</script>
